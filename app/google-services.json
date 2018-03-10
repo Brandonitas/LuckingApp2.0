@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1085669728304",
+    "firebase_url": "https://luckingapp-3d9cc.firebaseio.com",
+    "project_id": "luckingapp-3d9cc",
+    "storage_bucket": "luckingapp-3d9cc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1085669728304:android:97302d754f08dbf1",
+        "android_client_info": {
+          "package_name": "brandon.example.com.luckingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1085669728304-u3bjinon286nrtk98ts52equfg8djd8o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "brandon.example.com.luckingapp",
+            "certificate_hash": "59dd800997eb9148807938843bf004c4a0523ce7"
+          }
+        },
+        {
+          "client_id": "1085669728304-fg9ri7054luibpgvvcu8qur5257sdh1q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMBv2a1FddZMRqissJb8dqxdkeInGUUjw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1085669728304-fg9ri7054luibpgvvcu8qur5257sdh1q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
