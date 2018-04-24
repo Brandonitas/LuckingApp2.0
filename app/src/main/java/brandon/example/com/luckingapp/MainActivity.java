@@ -1,6 +1,7 @@
 package brandon.example.com.luckingapp;
 
 import android.content.Intent;
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -16,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
     private TextView textView;
     private Button button;
+    private FirebaseAuth auth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +38,11 @@ public class MainActivity extends AppCompatActivity {
         });
 
         textView.setText("Hi " +onlyname[0]+"\nare you ready to hit the streets?");
+        auth = FirebaseAuth.getInstance();
+
 
     }
+
+
+
 }

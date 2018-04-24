@@ -60,4 +60,5 @@
         app:layout_constraintHorizontal_bias="0.893"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/paleta" />
+
 </android.support.constraint.ConstraintLayout>

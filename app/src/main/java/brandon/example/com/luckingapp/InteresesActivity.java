@@ -1,6 +1,8 @@
 package brandon.example.com.luckingapp;
 
+import android.content.Intent;
 import android.graphics.Color;
+import android.os.Parcelable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
@@ -26,7 +28,7 @@ public class InteresesActivity extends AppCompatActivity {
 
         button = (Button) findViewById(R.id.button3);
         mainGrid = (GridLayout) findViewById(R.id.mainGrid);
-        intereses = new String[]{"beer", "cofee", "romantic", "coktail", "sea food", "wine", "hamburguer", "sushi", "tacos", "vegatarian"};
+        intereses = new String[]{"cerveza", "cafe", "romantic", "coktail", "mariscos", "wine", "hamburguesa", "sushi", "tacos", "ensaladas"};
         seleccionado = new ArrayList<>();
         //setSingleEvent(mainGrid);
         setToogleEvent(mainGrid);
@@ -34,7 +36,18 @@ public class InteresesActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.e("MYLOG", String.valueOf(seleccionado));
+                if(seleccionado.size()>1){
+                    Toast.makeText(InteresesActivity.this, "Selecciona solo una categoría", Toast.LENGTH_SHORT).show();
+                    return;
+                }else{
+                    DatosDestino datosDestino = new DatosDestino();
+                    datosDestino.categorias = seleccionado;
+                    Log.e("MYLOG", String.valueOf(datosDestino.categorias));
+                    Intent intent = new Intent(InteresesActivity.this, ConfiguracionActivity.class);
+                    intent.putExtra("datos", datosDestino);
+                    startActivity(intent);
+                }
+
             }
         });
 
