@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back"
+
     tools:context="brandon.example.com.luckingapp.MainActivity">
 
     <TextView
@@ -35,13 +35,14 @@
         app:srcCompat="@drawable/logo" />
 
     <Button
+
         android:id="@+id/button2"
         android:layout_width="303dp"
         android:layout_height="59dp"
         android:layout_marginBottom="28dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:background="@color/textColor"
+        android:background="@drawable/buttonstyle"
         android:text="Get a lucky plan!"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/back"
+
     android:weightSum="10"
     tools:context="brandon.example.com.luckingapp.InteresesActivity">
 
@@ -441,7 +441,7 @@
             android:id="@+id/button3"
             android:layout_width="303dp"
             android:layout_height="59dp"
-            android:background="@color/textColor"
+            android:background="@drawable/buttonstyle"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:text="Done"
