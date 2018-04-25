@@ -65,7 +65,7 @@ public class LoginActivity extends AppCompatActivity {
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 FirebaseUser user = firebaseAuth.getCurrentUser();
                 if(AccessToken.getCurrentAccessToken() != null){
-                    Toast.makeText(LoginActivity.this, AccessToken.getCurrentAccessToken().getExpires().toString(), Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(LoginActivity.this, AccessToken.getCurrentAccessToken().getExpires().toString(), Toast.LENGTH_SHORT).show();
                 }
                 if(user !=null){
                     String email = user.getEmail();

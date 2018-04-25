@@ -69,8 +69,6 @@ public class ConfiguracionActivity extends AppCompatActivity {
                 tv15.setTextColor(Color.GRAY);
                 tv16.setTextColor(Color.GRAY);
 
-
-
             }
 
             @Override

@@ -63,7 +63,7 @@ public class InteresesActivity extends AppCompatActivity {
                     if(cardView.getCardBackgroundColor().getDefaultColor() == -1){
                         //Change background
                         cardView.setCardBackgroundColor(Color.parseColor("#FF6F00"));
-                        Toast.makeText(InteresesActivity.this, "Seleccionaste "+intereses[finalI], Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(InteresesActivity.this, "Seleccionaste "+intereses[finalI], Toast.LENGTH_SHORT).show();
                         seleccionado.add(intereses[finalI]);
                     }else{
                         cardView.setCardBackgroundColor(Color.parseColor("#FFFFFF"));
